@@ -1,5 +1,5 @@
 // Configuração da API do Google Sheets
-const API_URL = 'https://script.google.com/macros/s/SEU_SCRIPT_ID/exec'; // Substitua pelo ID do seu script
+const API_URL = 'https://script.google.com/macros/s/AKfycbxQyhIzhqqekfUqr2Y2kXULm8-kVsNP1pWJkt4XYEFbPSEuS2w1zrlMbxhVkkJEtrWiqg/exec'; // Substitua pelo ID do seu script
 
 // Lista de prêmios disponíveis
 const PREMIOS = [

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Roleta Premiun | Ganhe Prêmios Incríveis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="roleta-wrapper">
+            <div class="premios-container">
+                <div class="roleta-display">
+                    <div class="premio-corrente" id="premioCorrente">
+                        <span class="premio-label">?</span>
+                    </div>
+                </div>
+                
+                <div class="roleta-animacao" id="roletaAnimacao">
+                    <div class="slot-machine">
+                        <div class="slot" id="slot1">🎁</div>
+                        <div class="slot" id="slot2">🎰</div>
+                        <div class="slot" id="slot3">✨</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controles">
+                <div class="input-group">
+                    <label for="nickname">Seu nome/nick:</label>
+                    <input type="text" id="nickname" placeholder="Digite seu nome..." maxlength="50" autocomplete="off">
+                </div>
+                
+                <button id="girarBtn" class="btn-girar">
+                    <span class="btn-text">GIRAR</span>
+                    <span class="btn-icon">🎲</span>
+                </button>
+            </div>
+
+            <div class="resultado" id="resultado" style="display: none;">
+                <div class="resultado-card">
+                    <div class="confetti-icon">🎉</div>
+                    <h3>Parabéns, <span id="vencedorNome"></span>!</h3>
+                    <p>Você ganhou:</p>
+                    <div class="premio-ganho" id="premioGanho"></div>
+                    <button class="btn-fechar" onclick="fecharResultado()">Continuar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="historico">
+            <h3>📊 Últimos Ganhadores</h3>
+            <div class="lista-ganhadores" id="listaGanhadores">
+                <div class="loading">Carregando histórico...</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
